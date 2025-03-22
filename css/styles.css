@@ -22,6 +22,9 @@ body {
     width: 450px;
     padding: 25px;
     position: relative;
+    background: #232323;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px #454545;
 }
 
 .avatar {
@@ -38,4 +41,29 @@ body {
     height: 100%;
     object-fit: cover;
     border: 5px solid lightgray;
+    border-radius: 50%;
+}
+
+.body {
+    margin-top: 80px;
+    margin-bottom: 10px;
+
+}
+
+.body p {
+    font-size: 18px;
+    color: azure;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 20px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #787878;
 }
