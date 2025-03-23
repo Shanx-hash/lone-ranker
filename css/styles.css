@@ -1,6 +1,75 @@
 :root {
-    --primary-color: purple;
+    --primary-color: red;
     --secondary-color: white;
     --neutral-color: #454545;
     --background-color: lightskyblue;
+    --tetiary-color: orange;
+}
+
+body {
+
+    height: 100vh;
+    background: url(tech-background\ svg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    background: blue;
+    height: 80px;
+}
+
+.brand {
+    color: var(--primary-color);
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 8px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    background: var(--neutral-color);
+    height: 3px;
+    transition: width 0.5s linear;
+
+}
+
+.links:hover::after {
+    width: 100%;
 }
