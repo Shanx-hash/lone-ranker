@@ -687,6 +687,8 @@ p {
     .untitled {
         margin-left: 200px;
         color: var(--secondary-color);
+        position: relative;
+        right: 120px;
     }
 
     .second-heading {
@@ -716,7 +718,7 @@ p {
 
     .grid-heading {
         position: relative;
-        left: 200px;
+        left: 380px;
     }
 
     .grid-container {
@@ -726,12 +728,14 @@ p {
     }
 
     .grid-item {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        margin-left: 100px;
     }
 
     .card-container {
         border: 3px solid white;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .card-1,
@@ -739,7 +743,11 @@ p {
     .card-3 {
         width: 250px;
         position: relative;
-        left: 280px;
+        left: 10px;
+    }
+
+    .grid-container {
+        height: 1000px;
     }
 
 }
@@ -800,6 +808,7 @@ p {
 
     .grid-item {
         margin-bottom: 15px;
+        margin-left: 100px;
     }
 
     .trainers {
@@ -818,12 +827,10 @@ p {
         grid-column-gap: 25px;
     }
 
-    .grid-item {
-        margin-bottom: 15px;
-    }
 
     .card-container {
         border: 3px solid white;
+
 
     }
 
@@ -832,13 +839,13 @@ p {
     .card-3 {
         width: 250px;
         position: relative;
-        left: 280px;
+        left: 10px;
     }
 
 
 }
 
-@media (min-width:760px) and (max-width:790px) {
+@media (min-width:760px) and (max-width:820px) {
     .video-container {
         border: 3px solid black;
         height: 260px;
@@ -880,6 +887,47 @@ p {
     .second-heading {
         transform: translateX(250px);
     }
+
+
+    .trainers {
+        position: relative;
+        left: 180px;
+    }
+
+    .grid-heading {
+        position: relative;
+        left: 200px;
+    }
+
+    .grid-container {
+        grid-template-columns: 380px 380px;
+        grid-template-rows: 300px 300px 300px;
+        grid-column-gap: 25px;
+    }
+
+    .grid-item {
+        margin-bottom: 15px;
+    }
+
+    .card-container {
+        border: 3px solid white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 200px;
+        position: relative;
+        left: 10px;
+
+    }
+
+    .card-3 {
+        left: 200px;
+    }
+
 }
 
 @media (min-width:539px) and (max-width:541px) {
