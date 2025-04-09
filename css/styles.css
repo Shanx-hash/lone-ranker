@@ -1,94 +1,46 @@
 body {
+    background: #fff8f0;
+    color: #333;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-
-label {
-    text-transform: uppercase;
-    font-size: large;
-}
-
-.container {
-    width: 500px;
-    height: 590px;
-    border: 3px solid black;
-    padding-left: 20px;
-    padding-top: 10px;
 }
 
 input {
-    padding: 10px 25px;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-
-.second-input {
-    margin-left: 10px;
-}
-
-.third-input {
-    width: 400px;
-    margin-top: 15px;
-}
-
-.fourth-input {
-    width: 400px;
-    margin-top: 15px;
-}
-
-.fifth-input {
-    width: 400px;
-    margin-top: 15px;
-}
-
-.sixth-input {
-    width: 400px;
-    margin-top: 5px;
-}
-
-.seventh-input {
-    border: 3px dotted lightgray;
-    text-transform: uppercase;
-    width: 400px;
-}
-
-.label {
-    transform: translateX(100px);
-}
-
-.radio-first {
-    margin-left: 20px;
-}
-
-.button {
-    margin-left: 5px;
-    margin-top: 2px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 button {
-    padding: 8px 100px;
-    border-radius: 5px;
+    padding: 6px 15px;
+    border-radius: 3px;
     text-transform: uppercase;
-    font-weight: bolder;
-    font-size: large;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e67e22;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.second-selection {
-    border: 3px dotted black;
-    width: 200px;
-    margin-top: 10px;
+button:hover {
+    background-color: #ff8c42;
+    box-shadow: 0 0 20px #ff8c42;
 }
 
-.text {
-    text-transform: uppercase;
-    font-size: large;
-    font-weight: 500px;
-    color: blue;
+p {}
+
+#container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }

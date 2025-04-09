@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+.container {
+    background: rgb(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background: #e67e22;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #e67e22;
+    color: #ffffff;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff8c42;
+    box-shadow: 0 0 20px #ff8c42;
+}
