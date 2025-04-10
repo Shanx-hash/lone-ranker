@@ -1,33 +1,25 @@
-const Input = document.getElementById("Input");
-const Fehrenheit = document.getElementById("Fehrenheit");
-const Celcius = document.getElementById("Celcius");
-const Submit = document.getElementById("Submit");
-const result = document.getElementById("result");
-let temp;
+const Happy = document.getElementById("Happy");
+const Sad = document.getElementById("Sad");
+const Tired = document.getElementById("Tired");
+const Angry = document.getElementById("Angry");
+const Button = document.getElementById("Button");
+const Result = document.getElementById("Result");
 
-Submit.onclick = function () {
-
-    if (Fehrenheit.checked) {
-        temp = Input.value;
-        temp = Number(temp);
-        temp = Math.floor(temp * 9 / 5) + 32;
-        result.textContent = temp + "°F";
+Button.onclick = function () {
+    if (Happy.checked) {
+        Result.textContent = "You are feeling 😊-Go and Party Champ"
     }
-    else if (Celcius.checked) {
-        temp = Input.value;
-        temp = Number(temp);
-        temp = (temp - 32) * (5 / 9);
-        result.textContent = temp.toFixed(1) + "°C";
-        if (temp < 0) {
-            result.textContent = temp.toFixed(1) + "°C" + "🥶";
-        }
-        else if (temp >= 30) {
-            result.textContent = temp.toFixed(1) + "°C" + "🥵";
-        }
+    else if (Sad.checked) {
+        Result.textContent = "You are feeling 😢-Go and talk to some friends"
+    }
+    else if (Tired.checked) {
+        Result.textContent = "You are feeling 😴-Go and Sleep"
+    }
+
+    else if (Angry.checked) {
+        Result.textContent = "You are feeling 😡-Go and cool down";
     }
     else {
-        result.textContent = "Please select a number!" + "😶‍🌫️";
-        result.style.color = "red";
+        Result.textContent = "Select Your mood Today😊";
     }
-
 }
