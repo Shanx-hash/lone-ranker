@@ -1,53 +1,33 @@
+const Input = document.getElementById("Input");
+const Fehrenheit = document.getElementById("Fehrenheit");
+const Celcius = document.getElementById("Celcius");
 const Submit = document.getElementById("Submit");
-const Input = document.getElementById("scoreInput");
-const Output = document.getElementById("output");
+const result = document.getElementById("result");
+let temp;
 
-function getGrade(score) {
-    if (score >= 90) {
-        return "A";
-    }
-    else if (score >= 80) {
-        return "B";
-    }
-    if (score >= 70) {
-        return "C";
-    }
-    else if (score >= 60) {
-        return 'D';
-    }
-    else {
-        return "F";
-    }
-
-}
 Submit.onclick = function () {
-    let score = Input.value;
-    score = Number(score);
 
-    if (score < 0 || score > 100 || isNaN(score)) {
-        Output.textContent = "Please enter a value between 0-100!";
-        Output.style.color = "red";
-        return;
+    if (Fehrenheit.checked) {
+        temp = Input.value;
+        temp = Number(temp);
+        temp = Math.floor(temp * 9 / 5) + 32;
+        result.textContent = temp + "°F";
     }
-
-
-    let grade = getGrade(score);
-    Output.textContent = "Your grade is:" + grade;
-    //Aplying Color depending on Grade.
-    if (grade === "A") {
-        Output.style.color = "green";
-        Output.textContent = "Your grade is:" + grade + "👍";
-    }
-    if (grade === "B" || grade === "C") {
-        Output.style.color = "orange";
-        Output.textContent = "Your grade is:" + grade + "😜";
-    }
-    else if (grade === "D") {
-        Output.style.color = "black";
-        Output.textContent = "Your grade is:" + grade + "😢";
+    else if (Celcius.checked) {
+        temp = Input.value;
+        temp = Number(temp);
+        temp = (temp - 32) * (5 / 9);
+        result.textContent = temp.toFixed(1) + "°C";
+        if (temp < 0) {
+            result.textContent = temp.toFixed(1) + "°C" + "🥶";
+        }
+        else if (temp >= 30) {
+            result.textContent = temp.toFixed(1) + "°C" + "🥵";
+        }
     }
     else {
-        Output.style.color = "red";
-        Output.textContent = "Your grade is:" + grade + "🤦‍♂️";
+        result.textContent = "Please select a number!" + "😶‍🌫️";
+        result.style.color = "red";
     }
+
 }

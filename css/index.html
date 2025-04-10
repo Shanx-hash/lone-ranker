@@ -10,15 +10,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="container">
-        <h1>Grade Calculator</h1>
-        <input type="text" id="scoreInput" placeholder="Enter your Grade"><br><br>
-        <button id="Submit">Submit</button><br>
-        <p id="output"></p>
+    <div class="temp-container">
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="Input"><br><br>
+        <input type="radio" id="Fehrenheit" name="name">
+        <label for="Fehrenheit">Celcius➡️Fehrenheit</label><br>
+        <input type="radio" id="Celcius" name="name">
+        <label for="Celcius">Fehrenheit➡️Celcius</label><br><br>
+        <button id="Submit">Submit</button>
+        <p id="result"></p>
     </div>
     <script src="index.js"></script>
 </body>
