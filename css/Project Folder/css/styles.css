@@ -1,35 +1,49 @@
 body {
     background: #fff8f0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: center;
 }
 
-.dice-container {
+.container {
+    margin: auto;
+    max-width: 450px;
+    width: 90%;
+    background: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+    padding: 30px;
+    filter: blur(0.3px);
+    border-radius: 8px;
     text-align: center;
     font-size: 2rem;
 }
 
 input {
     text-align: center;
-    padding: 8px 60px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 5px 5px;
 }
 
 button {
     font-size: 1.5rem;
-    padding: 5px 30px;
+    padding: 8px 15px;
     border-radius: 5px;
+    background: rgb(103, 103, 250);
     border: none;
-    background: rgb(87, 87, 238);
     color: #ffffff;
-    font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background: rgb(36, 36, 247);
+    background: rgb(56, 56, 246);
 }
 
-#image-result img {
-    width: 145px;
-    margin: 5px;
+#emoji-result img {
+    width: 150px;
+    margin: 3px;
+    margin: auto;
+}
+
+#emoji-result {
+    width: 600px;
+    margin: auto;
 }
