@@ -8,29 +8,36 @@ body {
     width: 90%;
     background: rgb(255, 255, 255, 0.3);
     box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
-    padding: 40px;
     border-radius: 10px;
+    border: none;
     text-align: center;
-    margin: auto;
     font-size: 2rem;
+    padding: 30px;
+    margin: auto;
 }
 
 button {
-    background-color: rgb(251, 82, 110);
-    cursor: pointer;
+    background: rgb(238, 114, 135);
     font-size: 2rem;
-    border: none;
-    padding: 8px;
     border-radius: 5px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
     color: #ffffff;
-    transition: background 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgb(238, 99, 122);
+    transition: background 0.5s ease-in-out;
 }
 
 button:hover {
-    background: rgb(245, 31, 66);
+    background: rgb(248, 29, 65);
 }
 
-#Emoji-Result img {
-    width: 150px;
-    margin-bottom: 10px;
+h1 {
+    color: rgb(228, 45, 75);
+}
+
+#Face-Result img {
+    width: 180px;
+    margin: 1px;
+    border-radius: 3px;
 }
