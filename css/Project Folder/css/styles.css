@@ -1,49 +1,36 @@
 body {
-    background: #fff8f0;
-    font-family: "IBM Plex Sans", sans-serif;
-    text-align: center;
+    background: linear-gradient(135deg, #f5ceec, #e0c3fc);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    margin: auto;
-    max-width: 450px;
+    max-width: 500px;
     width: 90%;
     background: rgb(255, 255, 255, 0.3);
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
-    padding: 30px;
-    filter: blur(0.3px);
-    border-radius: 8px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
     text-align: center;
+    margin: auto;
     font-size: 2rem;
 }
 
-input {
-    text-align: center;
-    font-size: 1rem;
-    padding: 5px 5px;
-}
-
 button {
-    font-size: 1.5rem;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background: rgb(103, 103, 250);
-    border: none;
-    color: #ffffff;
+    background-color: rgb(251, 82, 110);
     cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
-    background: rgb(56, 56, 246);
+    background: rgb(245, 31, 66);
 }
 
-#emoji-result img {
+#Emoji-Result img {
     width: 150px;
-    margin: 3px;
-    margin: auto;
-}
-
-#emoji-result {
-    width: 600px;
-    margin: auto;
+    margin-bottom: 10px;
 }
